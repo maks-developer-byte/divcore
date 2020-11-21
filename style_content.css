@@ -1,0 +1,214 @@
+body{
+  background-image: url('https://previews.123rf.com/images/vska/vska1211/vska121100071/16549480-abstract-dark-technology-dynamic-fade-banner-background.jpg');
+  background-repeat: repeat;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.navigation{
+  height: 100px;
+  width: 100%;
+}
+
+.logo{
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.top-menu {
+  background-color: #1a031d;
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: white;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+
+.content{
+  width: 100%;
+  height: 500px;
+  background-color: #22b9f4;
+
+}
+
+.service{
+  width: 100%;
+  min-height: 400px;
+  margin-top: 28px;
+  background: linear-gradient(45deg,#22b9f4,#09e2df,#22b9f4);
+}
+.service-container{
+  padding: 15px;
+  width: 90%;
+  min-height: 300px;
+  margin: 0px auto;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  
+}
+.service-cost{
+  width: 350px;
+  min-height: 250px;
+  background-color: blue;
+  display: inline-block;
+  margin-left: 25px;
+  border-radius: 20px;
+  
+}
+.service-cost img{
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 20px
+  
+  
+  
+}
+.service-cost h3{
+  text-align: center;
+  font-size: 18px;
+  color:white;
+  font-family: sans-serif;
+}
+.service-cost .description{
+  width: 100%;
+  height: 120px;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+.service-cost .description p{
+  padding: 10px
+}
+
+.service-cost img:hover{
+  transform: scale(1.2);
+}
+
+.service-cost button{
+  float: right;
+  margin-bottom: 16px;
+  margin-right : 8px;
+  width: 100px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #970cad;
+  border: 0px;
+  font-size: 16PX;
+  color: #fff;
+  font-family: sans-serif;
+  transition: .3s;
+  cursor: pointer;
+
+
+}
+.service-cost button:focus{
+  outline: none;
+}
+.service-cost button:hover{
+  background-color: #00ADEF;
+}
+.portfolio{
+  width: 100%;
+  min-height: 300px;
+  margin-top: 20px;
+}
+.portfolio-container{
+  width: 90%;
+  min-height : 300px;
+  border: 1px solid #ffff;
+  margin: 0px auto;
+  border-radius: 30px;
+  background: linear-gradient(#01307C,#0788DC,#42C5F5);
+}
+.portfolio-container img{
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.about-us{
+  width: 100%;
+  min-height: 300px;
+  margin-top: 20px; 
+}
+.about-us-container{
+  width: 90%;
+  min-height: 200px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin: 0px auto;
+ font-family: 'Trispace', sans-serif;
+ background-color: white;
+ padding: 15px;
+}
+.contact{
+  width: 100%;
+  height: 100px;
+  background-color: #7a6e6e;
+  margin-top: 20px;
+}
+.contact ul li{
+  display: inline-block;
+}
+.contact ul li a{
+  margin-left: 50px;
+  font-size: 20px;
+  color: white;
+  
+}
+.contact ul li a:active{
+  color: blue;
+}
